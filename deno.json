@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run -A --no-check --unstable-net --watch ./goo.js"
+    "dev": "deno run -A --no-check --unstable-net --watch ./gootube.js"
   },
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
