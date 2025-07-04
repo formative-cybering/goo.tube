@@ -1,3 +1,5 @@
+![goo.tube](/gootube.gif)
+
 # Goo Tube
 
 OSC desktop performance server
