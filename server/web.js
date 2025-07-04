@@ -4,11 +4,11 @@ import { serveStatic } from "middleware";
 
 const app = new Hono();
 
-app.use("*", serveStatic({ root: "./goo" }));
+app.use("*", serveStatic({ root: "./web" }));
 
 const files = [];
 try {
-  for await (const dirEntry of Deno.readDir("goo/x")) {
+  for await (const dirEntry of Deno.readDir("./web/x")) {
     if (dirEntry.isFile) {
       files.push(dirEntry.name);
     }
@@ -16,6 +16,8 @@ try {
 } catch (_e) {
   console.log("NO FILES");
 }
+
+console.log(files);
 
 app.get("*", (c) =>
   c.html(html`
@@ -102,8 +104,7 @@ app.get("*", (c) =>
         <goo-grid></goo-grid>
       </body>
     </html>
-  `),
-);
+  `));
 
 function serveWeb() {
   console.log("🕸️: Web listening");

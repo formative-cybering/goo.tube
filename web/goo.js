@@ -15,7 +15,7 @@ class GooTube extends HTMLElement {
     const flash = document.getElementsByTagName("goo-flash")[0];
     const cycle = document.getElementsByTagName("goo-cycle")[0];
     const files = window.X_FILES;
-    const ws = new WebSocket("ws://localhost:8123");
+    const ws = new WebSocket("ws://localhost:2222");
     const kickdex = [8];
     const flashdex = [-24];
     ws.onopen = () => {
