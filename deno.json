@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run -A --no-check --unstable-net --watch ./goo.js"
+  },
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
+  },
+  "importMap": "./importMap.json",
+  "lock": false
+}

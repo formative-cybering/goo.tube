@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Boxcutter';
+  src: url(/boxcutter-bold-webfont.ttf);
+}
+
+html {
+  font-family: 'Boxcutter';
+  background-color: black;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  font-size: 150%;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body,
+main {
+  margin: 0;
+  padding: 0;
+}
+
+goo-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212121;
+  filter: url(#wavy) url(#invert) url(#high-contrast-filter);
+  transform: scale(1.05);
+  /* background-size: cover; */
+  background-position: center center;
+  will-change: background;
+  transition: none;
+  background-size: 100%;
+  /* &.zoom {
+    background-size: 103%;
+    transition: all 3s linear;
+  } */
+}
+
+goo-flash {
+  background: red;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+  mix-blend-mode: multiply;
+  &.flash {
+    animation: flash 200ms backwards linear;
+  }
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  &::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%,
+        rgba(0, 0, 0, 0.25) 50%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.06),
+        rgba(0, 255, 0, 0.02),
+        rgba(0, 0, 255, 0.06)
+      ); */
+    z-index: 2;
+    background-size: 100% 2px, 2px 100%;
+    pointer-events: none;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+goo-grid {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 10vmin;
+  z-index: 20;
+  & span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    height: 15vmin;
+    width: 15vmin;
+    background: transparent;
+    border: 0.35vmin solid white;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    &.flash {
+      animation: togg 500ms backwards linear;
+    }
+  }
+}
+
+@keyframes togg {
+  0% {
+    background: red;
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+goo-cycle {
+  position: fixed;
+  top: 0;
+  right: 1rem;
+  font-size: 200px;
+  color: red;
+}
