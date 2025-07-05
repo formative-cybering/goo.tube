@@ -35,7 +35,6 @@ app.get("*", (c) =>
           <svg width="100%" height="100%">
             <defs>
               <filter id="high-contrast-filter">
-                <feColorMatrix type="saturate" values="0" result="desat" />
                 <feComponentTransfer>
                   <feFuncR
                     type="discrete"

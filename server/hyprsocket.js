@@ -1,3 +1,6 @@
+// This will allow control via Hyprsocket
+// Currently not used, keeping here for future reference
+
 const runtime = Deno.env.get("XDG_RUNTIME_DIR");
 const his = Deno.env.get("HYPRLAND_INSTANCE_SIGNATURE");
 const socketPath = `${runtime}/hypr/${his}/.socket.sock`;
