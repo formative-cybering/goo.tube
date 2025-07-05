@@ -26,7 +26,7 @@ app.get("*", (c) =>
         <title>GooTube</title>
         <link rel="stylesheet" href="/style.css" />
         <script>
-          window.X_FILES = ${raw(JSON.stringify(files))};
+        window.X_FILES = ${raw(JSON.stringify(files))};
         </script>
         <script type="module" src="/goo.js" defer></script>
       </head>
@@ -50,50 +50,6 @@ app.get("*", (c) =>
                     tableValues="1 0.8 0.5 0 0 0 0 0 0 0 0 0 0 0 .8 .9 1"
                   />
                 </feComponentTransfer>
-              </filter>
-              <filter id="invert">
-                <feColorMatrix
-                  in="SourceGraphic"
-                  type="matrix"
-                  values="-1 0 0 0 1
-                      0 -1 0 0 1
-                      0 0 -1 0 1
-                      0 0 0 1 0"
-                />
-              </filter>
-              <filter id="wavy">
-                <feTurbulence
-                  id="turbulence"
-                  type="turbulence"
-                  numOctaves="50"
-                  result="NOISE"
-                ></feTurbulence>
-                <feDisplacementMap
-                  id="displacement"
-                  in="SourceGraphic"
-                  in2="NOISE"
-                  scale="0"
-                >
-                  <animate
-                    id="controller"
-                    attributeName="scale"
-                    begin="indefinite"
-                    type="scale"
-                    dur="8s"
-                    from="0"
-                    repeatCount="1"
-                    fill="freeze"
-                    to="500"
-                  />
-                </feDisplacementMap>
-                <animate
-                  xlink:href="#turbulence"
-                  attributeName="baseFrequency"
-                  dur="60s"
-                  keyTimes="0;0.5;1"
-                  values="0.01 0.02;0.02 0.04;0.01 0.02"
-                  repeatCount="indefinite"
-                ></animate>
               </filter>
             </defs>
           </svg>
