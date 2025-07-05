@@ -22,8 +22,8 @@ export const bashParse = (data) => {
   if (data?.channel == 11) {
     console.log("shake");
     Deno.run({
-      cmd: ["sh", "./shake.sh"],
-      cwd: "./tube/scripts",
+      cmd: ["sh", "shake.sh"],
+      cwd: "./server/scripts",
     });
   }
 };
