@@ -1,8 +1,0 @@
-{
-  "imports": {
-    "hono": "https://deno.land/x/hono/mod.ts",
-    "helper": "https://deno.land/x/hono/helper.ts",
-    "middleware": "https://deno.land/x/hono/middleware.ts",
-    "osc-js": "https://cdn.jsdelivr.net/npm/osc-js@2.4.0/+esm"
-  }
-}

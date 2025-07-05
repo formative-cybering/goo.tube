@@ -1,10 +1,18 @@
 {
+  "imports": {
+    "@hono": "jsr:@hono/hono@^4.8.4",
+    "osc-js": "https://cdn.jsdelivr.net/npm/osc-js@2.4.0/+esm"
+  },
   "tasks": {
     "dev": "deno run -A --no-check --unstable-net --watch ./gootube.js"
   },
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "deno.ns"
+    ]
   },
-  "importMap": "./importMap.json",
   "lock": false
 }

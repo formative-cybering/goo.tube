@@ -1,6 +1,6 @@
-import { Hono } from "hono";
-import { html, raw } from "helper";
-import { serveStatic } from "middleware";
+import { Hono } from "@hono";
+import { html, raw } from "@hono/html";
+import { serveStatic } from "@hono/deno";
 
 const app = new Hono();
 
