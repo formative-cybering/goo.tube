@@ -1,4 +1,4 @@
-<video src="https://x.ill.computer/Untitled34.mp4#t=0.1"></video>
+<video src="https://x.ill.computer/Untitled34.mp4#t=0.1" controls></video>
 
 # Goo Tube
 
