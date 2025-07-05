@@ -1,4 +1,4 @@
-![goo.tube](/gootube.gif)
+<video src="https://x.ill.computer/Untitled34.mp4">
 
 # Goo Tube
 
