@@ -18,7 +18,7 @@ export const bashParse = (data) => {
   switch (data?.channel) {
     case 8:
       run("kitty sh pixterm.sh");
-      run(`hyprshade on ${shaders[index]}.glsl`);
+      run(`hyprshade on ../shaders/${shaders[index]}.glsl`);
       index = (index + 1) % shaders.length;
       break;
     case 11:
