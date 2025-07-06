@@ -19,9 +19,9 @@ Webserver will start on port `3333`.
 
 Shout out:
 
-- [hyprland](https://hypr.land)
-- [tidal cycles](https://tidalcycles.org)
-- [pixterm](https://github.com/eliukblau/pixterm)
-- [hyprshade](https://github.com/loqusion/hyprshade)
-- [shadertoy](https://shadertoy.com)
-- [wezterm](https://wezterm.org)
+- [Hyprland](https://hypr.land)
+- [Tidal Cycles](https://tidalcycles.org)
+- [Pixterm](https://github.com/eliukblau/pixterm)
+- [Hyprshade](https://github.com/loqusion/hyprshade)
+- [Shadertoy](https://shadertoy.com)
+- [Wezterm](https://wezterm.org)
