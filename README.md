@@ -2,7 +2,7 @@
 
 # Goo Tube
 
-OSC desktop performance server
+OSC desktop performance server for Tidal Cycles and Hyprland.
 
 ```sh
 deno run dev
@@ -20,6 +20,7 @@ Webserver will start on port `3333`.
 Shout out:
 
 - [hyprland](https://hypr.land)
+- [tidal cycles](https://tidalcycles.org)
 - [pixterm](https://github.com/eliukblau/pixterm)
 - [hyprshade](https://github.com/loqusion/hyprshade)
 - [shadertoy](https://shadertoy.com)
