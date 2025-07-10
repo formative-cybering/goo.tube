@@ -3,28 +3,34 @@
     "TypeScript": {
       "language_servers": [
         "deno",
-        "!typescript-language-server"
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
       ],
       "formatter": "language_server"
     },
     "JavaScript": {
       "language_servers": [
         "deno",
-        "!typescript-language-server"
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
       ],
       "formatter": "language_server"
     },
     "TSX": {
       "language_servers": [
         "deno",
-        "!typescript-language-server"
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
       ],
       "formatter": "language_server"
     }
   },
   "lsp": {
     "deno": {
-      "initialization_options": {
+      "settings": {
         "enable": true,
         "lint": true,
         "unstable": true,
