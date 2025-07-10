@@ -38,8 +38,6 @@
         "suggest": {
           "imports": {
             "hosts": {
-              "https://deno.land": true,
-              "https://cdn.jsdelivr.net": true,
               "https://esm.sh": true
             }
           }
@@ -51,10 +49,5 @@
   "format_on_save": "on",
   "code_actions_on_format": {
     "source.organizeImports": true
-  },
-  "tab_size": 2,
-  "hard_tabs": false,
-  "preferred_line_length": 100,
-  "remove_trailing_whitespace_on_save": true,
-  "ensure_final_newline_on_save": true
+  }
 }
