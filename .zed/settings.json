@@ -24,7 +24,7 @@
   },
   "lsp": {
     "deno": {
-      "initialization_options": {
+      "settings": {
         "enable": true,
         "lint": true,
         "unstable": true,
