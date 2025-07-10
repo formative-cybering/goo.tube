@@ -35,7 +35,6 @@
         "lint": true,
         "unstable": true,
         "config": "./deno.json",
-        "importMap": "./importMap.json",
         "codeLens": {
           "implementations": true,
           "references": true,
