@@ -11,8 +11,4 @@ const send = async (text) => {
   hypr.close();
 };
 
-export const hyprParse = async (data) => {
-  if (data.channel == 8) {
-    await send("dispatch exec kitty");
-  }
-};
+export const hyprParse = async (data) => {};
