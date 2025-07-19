@@ -53,6 +53,7 @@ goo-flash {
   z-index: 3;
   opacity: 0;
   mix-blend-mode: multiply;
+
   &.flash {
     animation: flash 200ms backwards linear;
   }
@@ -61,6 +62,7 @@ goo-flash {
 figure {
   margin: 0;
   padding: 0;
+
   &::before {
     content: " ";
     display: block;
@@ -69,26 +71,24 @@ figure {
     left: 0;
     bottom: 0;
     right: 0;
-    /* background: linear-gradient(
-        rgba(18, 16, 16, 0) 50%,
-        rgba(0, 0, 0, 0.25) 50%
-      ),
-      linear-gradient(
-        90deg,
-        rgba(255, 0, 0, 0.06),
-        rgba(0, 255, 0, 0.02),
-        rgba(0, 0, 255, 0.06)
-      ); */
     z-index: 2;
     background-size: 100% 2px, 2px 100%;
     pointer-events: none;
   }
 }
 
+goo-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @keyframes flash {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -105,6 +105,7 @@ goo-grid {
   justify-content: center;
   font-size: 10vmin;
   z-index: 20;
+
   & span {
     display: flex;
     align-items: center;
@@ -116,6 +117,7 @@ goo-grid {
     border: 0.35vmin solid white;
     border-radius: 50%;
     mix-blend-mode: screen;
+
     &.flash {
       animation: togg 500ms backwards linear;
     }
@@ -126,6 +128,7 @@ goo-grid {
   0% {
     background: red;
   }
+
   100% {
     background: transparent;
   }
@@ -135,6 +138,6 @@ goo-cycle {
   position: fixed;
   top: 0;
   right: 1rem;
-  font-size: 200px;
-  color: red;
+  font-size: 10vw;
+  color: lime;
 }

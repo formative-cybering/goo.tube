@@ -9,7 +9,7 @@ app.use("*", serveStatic({ root: "./web" }));
 const files = [];
 try {
   for await (const dirEntry of Deno.readDir("./web/x")) {
-    if (dirEntry.isFile) {
+    if (dirEntry.isFile && !dirEntry.name.startsWith(".")) {
       files.push(dirEntry.name);
     }
   }
@@ -55,7 +55,8 @@ app.get("*", (c) =>
           <goo-tube index="0"><goo-bg></goo-bg></goo-tube>
           <goo-flash></goo-flash>
         </figure>
-        <goo-cycle></goo-cycle>
+        <goo-cycle>GooTube</goo-cycle>
+        <goo-info>Send OSC messages on port 1111 and open up your browser console</goo-info>
         <goo-grid></goo-grid>
       </body>
     </html>

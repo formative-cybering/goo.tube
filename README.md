@@ -4,6 +4,9 @@
 
 OSC desktop performance server for Tidal Cycles and Hyprland.
 
+> [!CAUTION]
+> This repo is mainly for personal artistic use, it requires a bespoke setup to your machine and needs. It's great for arbitrarily passing OSC message to bash scripts and/or websockets, but it will only do what you tell it to do, and in its default state will not do uch.
+
 ```sh
 deno run dev
 ```
