@@ -2,10 +2,10 @@
 
 # Goo Tube
 
-OSC desktop performance server for Tidal Cycles and Hyprland.
+[OSC](https://en.wikipedia.org/wiki/Open_Sound_Control) desktop performance server for [Tidal Cycles](https://tidalcycles.org/) and [Hyprland](https://hypr.land).
 
 > [!CAUTION]
-> This repo is mainly for personal artistic use, it requires a bespoke setup to your machine and needs. It's great for arbitrarily passing OSC message to bash scripts and/or websockets, but it will only do what you tell it to do, and in its default state will not do uch.
+> This repo is mainly for personal artistic use, it requires a bespoke setup to your machine and needs. It's great for arbitrarily passing OSC message to bash scripts and/or websockets, but it will only do what you tell it to do, and in its default state will not do much.
 
 ```sh
 deno run dev
